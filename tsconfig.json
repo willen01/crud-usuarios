@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    
+    "target": "es2017",                                 
+    "module": "commonjs",
+    "allowJs": true,     //permite libs que só rodam em js serem inseridas no projeto                           
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,           
+    "skipLibCheck": true,
+    "outDir": "./dist" //quando o build para produção for realizado, os arquivos devem ficar na pasta dist                                  
+  }
+}
