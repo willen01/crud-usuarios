@@ -1,20 +1,21 @@
 import express from "express";
+import UserController from "./controllers/UserController";
 
 const router = express.Router();
 
 //create.
-router.post("/users", async () => {});
+router.post("/users", UserController.create);
 
 //read.
-router.get("/users", async () => {});
+router.get("/users", UserController.findAll);
 
 //read.
-router.get("/users/:userID", async () => {});
+router.get("/users/:userID", UserController.findOne);
 
 //update
-router.put("/users/:userID", async () => {});
+router.put("/users/:userID", UserController.update);
 
 //delete.
-router.put("/users/:userID", async () => {});
+router.delete("/users/:userID", UserController.delete);
 
 export { router };
