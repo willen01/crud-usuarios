@@ -10,7 +10,7 @@ router.post("/users", UserController.create);
 router.get("/users", UserController.findAll);
 
 //read.
-router.get("/users/:userID", UserController.findOne);
+router.get("/users/:userid", UserController.findOne);
 
 //update
 router.put("/users/:userID", UserController.update);
