@@ -35,7 +35,11 @@ class UserController {
     return res.status(204).send();
   }
 
-  async delete(req: Request, res: Response) {}
+  async delete(req: Request, res: Response) {
+    const { userid } = req.params;
+    await UserModel.destroy({ where: { id: userid } });
+    return res.status(204).send();
+  }
 }
 
 export default new UserController();

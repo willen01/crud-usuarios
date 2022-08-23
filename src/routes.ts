@@ -16,6 +16,6 @@ router.get("/users/:userid", UserController.findOne);
 router.put("/users/:userid", UserController.update);
 
 //delete.
-router.delete("/users/:userID", UserController.delete);
+router.delete("/users/:userid", UserController.delete);
 
 export { router };
